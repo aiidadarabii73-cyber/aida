@@ -1,0 +1,13 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "JWT_SECRET",
+      "description": "JWT secret for user authentication tokens — a default dev value is embedded in compose; replace with a strong secret for production",
+      "requiredAtBoot": true,
+      "generatedForDevelopment": true
+    }
+  ]
+}

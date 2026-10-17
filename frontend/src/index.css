@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nestora-bg text-white font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(20, 26, 33, 0.55);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(201, 162, 75, 0.15);
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9A24B, #E2C275);
+  }
+  .gold-text {
+    background: linear-gradient(135deg, #C9A24B, #E2C275);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card-base {
+    @apply bg-nestora-card rounded-2xl border border-white/[0.06];
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:border-nestora-gold/40;
+  }
+  .btn-gold {
+    @apply gold-gradient text-nestora-bg font-heading font-semibold rounded-full px-6 py-3 transition-all duration-300 hover:shadow-[0_0_24px_rgba(201,162,75,0.35)] hover:brightness-110;
+  }
+  .section-title {
+    @apply font-heading font-bold uppercase tracking-wider text-center;
+  }
+  .gold-line {
+    @apply block w-12 h-[3px] gold-gradient rounded-full mx-auto mt-3;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0B0F14; }
+::-webkit-scrollbar-thumb { background: #C9A24B; border-radius: 4px; }
+
+/* Range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: rgba(201, 162, 75, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C9A24B, #E2C275);
+  cursor: pointer;
+  border: 2px solid #0B0F14;
+  box-shadow: 0 0 8px rgba(201, 162, 75, 0.4);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C9A24B, #E2C275);
+  cursor: pointer;
+  border: 2px solid #0B0F14;
+}
+
+/* Focus accessibility */
+*:focus-visible {
+  outline: 2px solid #C9A24B;
+  outline-offset: 2px;
+}
