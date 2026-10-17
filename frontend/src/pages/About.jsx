@@ -10,8 +10,8 @@ const stats = [
 
 const team = [
   { name: 'Sarah Mitchell', role: 'Founder & CEO', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80' },
-  { name: 'James Anderson', role: 'Head of Sales', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c3ce6?auto=format&fit=crop&w=400&q=80' },
-  { name: 'Emma Thompson', role: 'Property Director', photo: 'https://images.unsplash.com/photo-1580489944761-15a4d5b6c4f6?auto=format&fit=crop&w=400&q=80' },
+  { name: 'James Anderson', role: 'Head of Sales', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' },
+  { name: 'Emma Thompson', role: 'Property Director', photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80' },
   { name: 'Michael Bennett', role: 'International Lead', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80' },
 ]
 

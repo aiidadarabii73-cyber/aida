@@ -6,8 +6,8 @@ import SearchBar from '../components/SearchBar'
 import PropertyCard from '../components/PropertyCard'
 import ScrollReveal from '../components/ScrollReveal'
 
-const heroImg = 'https://images.unsplash.com/photo-1600596542815-ff1a8f6f6f6e?auto=format&fit=crop&w=1920&q=80'
-const ctaImg = 'https://images.unsplash.com/photo-1600210491369-e3f6c7c1c3f1?auto=format&fit=crop&w=1920&q=80'
+const heroImg = 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1920&q=80'
+const ctaImg = 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80'
 
 const whyChooseUs = [
   { icon: HomeIcon, title: 'Premium Listings', desc: 'Curated exclusive luxury homes and sophisticated properties.' },
