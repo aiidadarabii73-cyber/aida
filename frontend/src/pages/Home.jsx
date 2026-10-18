@@ -5,8 +5,8 @@ import api from '../api/client'
 import SearchBar from '../components/SearchBar'
 import PropertyCard from '../components/PropertyCard'
 import ScrollReveal from '../components/ScrollReveal'
+import CinematicHero from '../components/CinematicHero'
 
-const heroImg = 'https://images.unsplash.com/photo-1781795414968-8ece31826420?auto=format&fit=crop&w=1920&q=80'
 const ctaImg = 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80'
 
 const whyChooseUs = [
@@ -25,25 +25,8 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative h-screen flex items-center">
-        <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury villa at dusk" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-nestora-bg via-nestora-bg/60 to-transparent" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 w-full">
-          <div className="max-w-2xl">
-            <h1 className="font-heading font-bold uppercase leading-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-              <span className="block text-white">Find Your Perfect</span>
-              <span className="block gold-text">Living Space</span>
-            </h1>
-            <div className="w-16 h-1 gold-gradient rounded-full mb-6" />
-            <p className="text-nestora-grey text-lg max-w-lg">
-              Discover exclusive luxury homes and sophisticated properties tailored to your modern lifestyle with Nestora Homes.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Cinematic Hero */}
+      <CinematicHero />
 
       {/* Search Bar */}
       <section className="relative py-12 px-4 z-10">
