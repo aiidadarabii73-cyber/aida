@@ -6,7 +6,7 @@ import SearchBar from '../components/SearchBar'
 import PropertyCard from '../components/PropertyCard'
 import ScrollReveal from '../components/ScrollReveal'
 
-const heroImg = 'https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?auto=format&fit=crop&w=1920&q=80'
+const heroImg = 'https://images.unsplash.com/photo-1781795414968-8ece31826420?auto=format&fit=crop&w=1920&q=80'
 const ctaImg = 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80'
 
 const whyChooseUs = [
@@ -26,12 +26,12 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative min-h-screen flex flex-col">
+      <section className="relative h-screen flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury villa at dusk" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-nestora-bg via-nestora-bg/70 to-transparent" />
+          <img src={heroImg} alt="Luxury villa at dusk" className="w-full h-full object-cover object-center" />
+          <div className="absolute inset-0 bg-gradient-to-r from-nestora-bg via-nestora-bg/60 to-transparent" />
         </div>
-        <div className="relative flex-1 flex items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 w-full">
           <div className="max-w-2xl">
             <h1 className="font-heading font-bold uppercase leading-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
               <span className="block text-white">Find Your Perfect</span>
@@ -43,9 +43,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="relative pb-8 px-4 z-10">
-          <SearchBar />
-        </div>
+      </section>
+
+      {/* Search Bar */}
+      <section className="relative py-12 px-4 z-10">
+        <SearchBar />
       </section>
 
       {/* Featured Properties */}
