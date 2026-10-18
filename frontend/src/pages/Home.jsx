@@ -6,7 +6,7 @@ import SearchBar from '../components/SearchBar'
 import PropertyCard from '../components/PropertyCard'
 import ScrollReveal from '../components/ScrollReveal'
 
-const heroImg = 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1920&q=80'
+const heroImg = 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1920&q=80'
 const ctaImg = 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1920&q=80'
 
 const whyChooseUs = [
@@ -34,8 +34,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 w-full">
           <div className="max-w-2xl">
             <h1 className="font-heading font-bold uppercase leading-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-              <span className="block text-white">Find Your</span>
-              <span className="block text-white">Perfect</span>
+              <span className="block text-white">Find Your Perfect</span>
               <span className="block gold-text">Living Space</span>
             </h1>
             <div className="w-16 h-1 gold-gradient rounded-full mb-6" />
